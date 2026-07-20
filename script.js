@@ -25,3 +25,13 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e){
   }
   alert("Login Successful! ✅");
 });
+
+// Show/Hide Password
+const togglePass = document.getElementById('togglePass');
+const loginPassword = document.getElementById('loginPassword');
+
+togglePass.addEventListener('click', function () {
+  const type = loginPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+  loginPassword.setAttribute('type', type);
+  this.querySelector('i').classList.toggle('fa-eye-slash');
+});
