@@ -88,3 +88,19 @@ if(regForm){
     }
   });
 }
+
+// 4. AJAX Dummy Email Check
+const regEmail = document.getElementById('regEmail');
+
+if(regEmail){
+  regEmail.addEventListener('blur', function(){
+    let email = this.value;
+    // Dummy check: agar email me "test" hai to error
+    if(email.includes("test")){
+      alert("Ye email pehle se register hai!");
+      this.classList.add('is-invalid');
+    } else {
+      this.classList.remove('is-invalid');
+    }
+  });
+}
