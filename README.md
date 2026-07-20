@@ -11,4 +11,3 @@
 
 ## 👨‍💻 Author
 Sameer
-ApexPlanet Internship - Task 2
