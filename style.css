@@ -30,3 +30,35 @@ body {
 .btn-primary:hover {
   background: var(--accent-color);
 }
+
+/* Card Animation */
+.animate-card {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Hover Effect */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,123,255,0.3);
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+  transition: all 0.3s ease;
+}
