@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #0d6efd;
+  --accent-color: #20c997;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  scroll-behavior: smooth;
+}
+
+.animate-card {
+  border-radius: 20px;
+  animation: fadeInUp 0.8s ease-in-out;
+  transition: transform 0.3s;
+}
+.animate-card:hover {
+  transform: translateY(-8px);
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border: none;
+}
+.btn-primary:hover {
+  background: var(--accent-color);
+}
